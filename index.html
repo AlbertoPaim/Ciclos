@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="assets/script/script.js" defer></script>
+    <title>Ciclos-Alberto Paim</title>
+</head>
+<body>
+    
+        <form class="login">
+        <input type="text" placeholder="Seu Nome" required class="login-input">
+        <input type="password" placeholder="'123'" required class="password-input">
+        <button id="login-btn" onclick="login()">Entrar</button>
+        </form>
+        
+    <section id="container">
+        <h1><img src="assets/imgs/calendario.png" alt="icone calendário" onclick="logOut()"></h1>
+        
+        <div class="months">
+            <div class="selector">
+
+                <!-- INPUT -->
+            <div class="choose">
+                <div class="text">
+                    <div class="selectMonth">Jan</div>
+                    <div class="selectMonth">Fev</div>
+                    <div class="selectMonth">Mar</div>
+                    <div class="selectMonth">Abr</div>
+                    <div class="selectMonth show">Mai</div>
+                    <div class="selectMonth">Jun</div>
+                    <div class="selectMonth">Jul</div>
+                    <div class="selectMonth">Ago</div>
+                    <div class="selectMonth">Set</div>
+                    <div class="selectMonth">Out</div>
+                    <div class="selectMonth">Nov</div>
+                    <div class="selectMonth">Dez</div>
+                </div>
+                
+            </div> 
+
+
+            <div class="periods">
+                <div class="period show" title="Periodo Fértil"><img src="assets/imgs/fértil.png" alt="Periodo Fértil"></div>
+                <div class="period" title="Fluxo Baixo"><img src="assets/imgs/baixo.png" alt="Fluxo Baixo"></div>
+                <div class="period" title="Fluxo Médio"><img src="assets/imgs/medio.png" alt="Fluxo Médio"></div>
+                <div class="period" title="Fluxo Intenso"><img src="assets/imgs/sangue.png" alt="Fluxo Intenso"></div>
+                <div class="period" title="Relação Sexual"><img src="assets/imgs/sexo.png" alt="Relação Sexual"></div>
+                <div class="period" title="Limpar"><img src="assets/imgs/clean.png" alt="Limpar"></div>
+                <div class="period" title="Próxima Menstruação"><img src="assets/imgs/calcular.png" alt="Próxima Menstruação"></div>
+                <div class="period" title="Bloco de Notas"><img src="assets/imgs/notes.png" alt="Bloco de Notas"></div>
+                
+            </div>
+            </div>
+            
+            <div class="content">
+                <h3 class="month">Janeiro</h3>
+                <div class="days">
+                <div class="day">01</div>
+                <div class="day">02</div>
+                <div class="day">03</div>
+                <div class="day">04</div>
+                <div class="day">05</div>
+                <div class="day">06</div>
+                <div class="day">07</div>
+                <div class="day">08</div>
+                <div class="day">09</div>
+                <div class="day">10</div>
+                <div class="day">11</div>
+                <div class="day">12</div>
+                <div class="day">13</div>
+                <div class="day">14</div>
+                <div class="day">15</div>
+                <div class="day">16</div>
+                <div class="day">17</div>
+                <div class="day">18</div>
+                <div class="day">19</div>
+                <div class="day">20</div>
+                <div class="day">21</div>
+                <div class="day">22</div>
+                <div class="day">23</div>
+                <div class="day">24</div>
+                <div class="day">25</div>
+                <div class="day">26</div>
+                <div class="day">27</div>
+                <div class="day">28</div>
+                <div class="day">29</div>
+                <div class="day">30</div>
+                <div class="day">31</div>    
+                </div>
+            </div>
+            <div class="content">
+                <h3 class="month">Fevereiro</h3>
+                <div class="days">
+                <div class="day">01</div>
+                <div class="day">02</div>
+                <div class="day">03</div>
+                <div class="day">04</div>
+                <div class="day">05</div>
+                <div class="day">06</div>
+                <div class="day">07</div>
+                <div class="day">08</div>
+                <div class="day">09</div>
+                <div class="day">10</div>
+                <div class="day">11</div>
+                <div class="day">12</div>
+                <div class="day">13</div>
+                <div class="day">14</div>
+                <div class="day">15</div>
+                <div class="day">16</div>
+                <div class="day">17</div>
+                <div class="day">18</div>
+                <div class="day">19</div>
+                <div class="day">20</div>
+                <div class="day">21</div>
+                <div class="day">22</div>
+                <div class="day">23</div>
+                <div class="day">24</div>
+                <div class="day">25</div>
+                <div class="day">26</div>
+                <div class="day">27</div>
+                <div class="day">28</div>
+                <div class="day">29</div>    
+                </div>
+            </div>
+            <div class="content">
+                <h3 class="month">Março</h3>
+                <div class="days">
+                <div class="day">01</div>
+                <div class="day">02</div>
+                <div class="day">03</div>
+                <div class="day">04</div>
+                <div class="day">05</div>
+                <div class="day">06</div>
+                <div class="day">07</div>
+                <div class="day">08</div>
+                <div class="day">09</div>
+                <div class="day">10</div>
+                <div class="day">11</div>
+                <div class="day">12</div>
+                <div class="day">13</div>
+                <div class="day">14</div>
+                <div class="day">15</div>
+                <div class="day">16</div>
+                <div class="day">17</div>
+                <div class="day">18</div>
+                <div class="day">19</div>
+                <div class="day">20</div>
+                <div class="day">21</div>
+                <div class="day">22</div>
+                <div class="day">23</div>
+                <div class="day">24</div>
+                <div class="day">25</div>
+                <div class="day">26</div>
+                <div class="day">27</div>
+                <div class="day">28</div>
+                <div class="day">29</div>
+                <div class="day">30</div>
+                <div class="day">31</div>    
+                </div>
+            </div>
+            <div class="content">
+                <h3 class="month">Abril</h3>
+                <div class="days">
+                <div class="day">01</div>
+                <div class="day">02</div>
+                <div class="day">03</div>
+                <div class="day">04</div>
+                <div class="day">05</div>
+                <div class="day">06</div>
+                <div class="day">07</div>
+                <div class="day">08</div>
+                <div class="day">09</div>
+                <div class="day">10</div>
+                <div class="day">11</div>
+                <div class="day">12</div>
+                <div class="day">13</div>
+                <div class="day">14</div>
+                <div class="day">15</div>
+                <div class="day">16</div>
+                <div class="day">17</div>
+                <div class="day">18</div>
+                <div class="day">19</div>
+                <div class="day">20</div>
+                <div class="day">21</div>
+                <div class="day">22</div>
+                <div class="day">23</div>
+                <div class="day">24</div>
+                <div class="day">25</div>
+                <div class="day">26</div>
+                <div class="day">27</div>
+                <div class="day">28</div>
+                <div class="day">29</div>
+                <div class="day">30</div>  
+                </div>
+            </div>
+            <div class="content show">
+                <h3 class="month">Maio</h3>
+                <div class="days">
+                <div class="day">01</div>
+                <div class="day">02</div>
+                <div class="day">03</div>
+                <div class="day">04</div>
+                <div class="day">05</div>
+                <div class="day">06</div>
+                <div class="day">07</div>
+                <div class="day">08</div>
+                <div class="day">09</div>
+                <div class="day">10</div>
+                <div class="day">11</div>
+                <div class="day">12</div>
+                <div class="day">13</div>
+                <div class="day">14</div>
+                <div class="day">15</div>
+                <div class="day">16</div>
+                <div class="day">17</div>
+                <div class="day">18</div>
+                <div class="day">19</div>
+                <div class="day">20</div>
+                <div class="day">21</div>
+                <div class="day">22</div>
+                <div class="day">23</div>
+                <div class="day">24</div>
+                <div class="day">25</div>
+                <div class="day">26</div>
+                <div class="day">27</div>
+                <div class="day">28</div>
+                <div class="day">29</div>
+                <div class="day">30</div>
+                <div class="day">31</div>    
+                </div>
+            </div>
+            <div class="content">
+                <h3 class="month">Junho</h3>
+                <div class="days">
+                <div class="day">01</div>
+                <div class="day">02</div>
+                <div class="day">03</div>
+                <div class="day">04</div>
+                <div class="day">05</div>
+                <div class="day">06</div>
+                <div class="day">07</div>
+                <div class="day">08</div>
+                <div class="day">09</div>
+                <div class="day">10</div>
+                <div class="day">11</div>
+                <div class="day">12</div>
+                <div class="day">13</div>
+                <div class="day">14</div>
+                <div class="day">15</div>
+                <div class="day">16</div>
+                <div class="day">17</div>
+                <div class="day">18</div>
+                <div class="day">19</div>
+                <div class="day">20</div>
+                <div class="day">21</div>
+                <div class="day">22</div>
+                <div class="day">23</div>
+                <div class="day">24</div>
+                <div class="day">25</div>
+                <div class="day">26</div>
+                <div class="day">27</div>
+                <div class="day">28</div>
+                <div class="day">29</div>
+                <div class="day">30</div>  
+                </div>
+            </div>
+            <div class="content">
+                <h3 class="month">Julho</h3>
+                <div class="days">
+                <div class="day">01</div>
+                <div class="day">02</div>
+                <div class="day">03</div>
+                <div class="day">04</div>
+                <div class="day">05</div>
+                <div class="day">06</div>
+                <div class="day">07</div>
+                <div class="day">08</div>
+                <div class="day">09</div>
+                <div class="day">10</div>
+                <div class="day">11</div>
+                <div class="day">12</div>
+                <div class="day">13</div>
+                <div class="day">14</div>
+                <div class="day">15</div>
+                <div class="day">16</div>
+                <div class="day">17</div>
+                <div class="day">18</div>
+                <div class="day">19</div>
+                <div class="day">20</div>
+                <div class="day">21</div>
+                <div class="day">22</div>
+                <div class="day">23</div>
+                <div class="day">24</div>
+                <div class="day">25</div>
+                <div class="day">26</div>
+                <div class="day">27</div>
+                <div class="day">28</div>
+                <div class="day">29</div>
+                <div class="day">30</div>
+                <div class="day">31</div>    
+                </div>
+            </div>
+            <div class="content">
+                <h3 class="month">Agosto</h3>
+                <div class="days">
+                <div class="day">01</div>
+                <div class="day">02</div>
+                <div class="day">03</div>
+                <div class="day">04</div>
+                <div class="day">05</div>
+                <div class="day">06</div>
+                <div class="day">07</div>
+                <div class="day">08</div>
+                <div class="day">09</div>
+                <div class="day">10</div>
+                <div class="day">11</div>
+                <div class="day">12</div>
+                <div class="day">13</div>
+                <div class="day">14</div>
+                <div class="day">15</div>
+                <div class="day">16</div>
+                <div class="day">17</div>
+                <div class="day">18</div>
+                <div class="day">19</div>
+                <div class="day">20</div>
+                <div class="day">21</div>
+                <div class="day">22</div>
+                <div class="day">23</div>
+                <div class="day">24</div>
+                <div class="day">25</div>
+                <div class="day">26</div>
+                <div class="day">27</div>
+                <div class="day">28</div>
+                <div class="day">29</div>
+                <div class="day">30</div>
+                <div class="day">31</div>    
+                </div>
+            </div>
+            <div class="content">
+                <h3 class="month">Setembro</h3>
+                <div class="days">
+                <div class="day">01</div>
+                <div class="day">02</div>
+                <div class="day">03</div>
+                <div class="day">04</div>
+                <div class="day">05</div>
+                <div class="day">06</div>
+                <div class="day">07</div>
+                <div class="day">08</div>
+                <div class="day">09</div>
+                <div class="day">10</div>
+                <div class="day">11</div>
+                <div class="day">12</div>
+                <div class="day">13</div>
+                <div class="day">14</div>
+                <div class="day">15</div>
+                <div class="day">16</div>
+                <div class="day">17</div>
+                <div class="day">18</div>
+                <div class="day">19</div>
+                <div class="day">20</div>
+                <div class="day">21</div>
+                <div class="day">22</div>
+                <div class="day">23</div>
+                <div class="day">24</div>
+                <div class="day">25</div>
+                <div class="day">26</div>
+                <div class="day">27</div>
+                <div class="day">28</div>
+                <div class="day">29</div>
+                <div class="day">30</div>   
+                </div>
+            </div>
+            <div class="content">
+                <h3 class="month">Outubro</h3>
+                <div class="days">
+                <div class="day">01</div>
+                <div class="day">02</div>
+                <div class="day">03</div>
+                <div class="day">04</div>
+                <div class="day">05</div>
+                <div class="day">06</div>
+                <div class="day">07</div>
+                <div class="day">08</div>
+                <div class="day">09</div>
+                <div class="day">10</div>
+                <div class="day">11</div>
+                <div class="day">12</div>
+                <div class="day">13</div>
+                <div class="day">14</div>
+                <div class="day">15</div>
+                <div class="day">16</div>
+                <div class="day">17</div>
+                <div class="day">18</div>
+                <div class="day">19</div>
+                <div class="day">20</div>
+                <div class="day">21</div>
+                <div class="day">22</div>
+                <div class="day">23</div>
+                <div class="day">24</div>
+                <div class="day">25</div>
+                <div class="day">26</div>
+                <div class="day">27</div>
+                <div class="day">28</div>
+                <div class="day">29</div>
+                <div class="day">30</div>
+                <div class="day">31</div>    
+                </div>
+            </div>
+            <div class="content">
+                <h3 class="month">Novembro</h3>
+                <div class="days">
+                <div class="day">01</div>
+                <div class="day">02</div>
+                <div class="day">03</div>
+                <div class="day">04</div>
+                <div class="day">05</div>
+                <div class="day">06</div>
+                <div class="day">07</div>
+                <div class="day">08</div>
+                <div class="day">09</div>
+                <div class="day">10</div>
+                <div class="day">11</div>
+                <div class="day">12</div>
+                <div class="day">13</div>
+                <div class="day">14</div>
+                <div class="day">15</div>
+                <div class="day">16</div>
+                <div class="day">17</div>
+                <div class="day">18</div>
+                <div class="day">19</div>
+                <div class="day">20</div>
+                <div class="day">21</div>
+                <div class="day">22</div>
+                <div class="day">23</div>
+                <div class="day">24</div>
+                <div class="day">25</div>
+                <div class="day">26</div>
+                <div class="day">27</div>
+                <div class="day">28</div>
+                <div class="day">29</div>
+                <div class="day">30</div> 
+                </div>
+            </div>
+            <div class="content">
+                <h3 class="month">Dezembro</h3>
+                <div class="days">
+                <div class="day">01</div>
+                <div class="day">02</div>
+                <div class="day">03</div>
+                <div class="day">04</div>
+                <div class="day">05</div>
+                <div class="day">06</div>
+                <div class="day">07</div>
+                <div class="day">08</div>
+                <div class="day">09</div>
+                <div class="day">10</div>
+                <div class="day">11</div>
+                <div class="day">12</div>
+                <div class="day">13</div>
+                <div class="day">14</div>
+                <div class="day">15</div>
+                <div class="day">16</div>
+                <div class="day">17</div>
+                <div class="day">18</div>
+                <div class="day">19</div>
+                <div class="day">20</div>
+                <div class="day">21</div>
+                <div class="day">22</div>
+                <div class="day">23</div>
+                <div class="day">24</div>
+                <div class="day">25</div>
+                <div class="day">26</div>
+                <div class="day">27</div>
+                <div class="day">28</div>
+                <div class="day">29</div>
+                <div class="day">30</div>
+                <div class="day">31</div>    
+                </div>
+            </div>
+        </div>
+        <div class="notes ">
+            <textarea  class="note show" cols="30" rows="10"></textarea>
+           
+        </div>
+        
+    </section>
+
+    <div class="nextPeriod-container">
+            
+            <label for="data-ultima-menstruacao">Data da última menstruação:</label>
+            <input type="date" id="data-ultima-menstruacao">
+            
+            <label for="duracao-ultimo-periodo">Duração do último período menstrual (em dias):</label>
+            <select id="duracao-ultimo-periodo">
+                <option value="3">3 dias</option>
+                <option value="4">4 dias</option>
+                <option value="5" selected>5 dias</option>
+                <option value="6">6 dias</option>
+                <option value="7">7 dias</option>
+                <option value="8">8 dias</option>
+            </select>
+            
+            <label for="duracao-ciclo">Duração do ciclo menstrual (em dias):</label>
+            <select id="duracao-ciclo">
+                <option value="21">21 dias</option>
+                <option value="22">22 dias</option>
+                <option value="23">23 dias</option>
+                <option value="24">24 dias</option>
+                <option value="25">25 dias</option>
+                <option value="26">26 dias</option>
+                <option value="27">27 dias</option>
+                <option value="28" selected>28 dias</option>
+                <option value="29">29 dias</option>
+                <option value="30">30 dias</option>
+                <option value="31">31 dias</option>
+                <option value="32">32 dias</option>
+                <option value="33">33 dias</option>
+                <option value="34">34 dias</option>
+                <option value="35">35 dias</option>
+            </select>
+            
+            <button onclick="calcularPeriodo()">Calcular</button>
+            <p id="resultado"></p>
+            <img src="assets/imgs/voltar.png" alt="" onclick="backTo()">
+           
+        </div>
+        
+
+
+       
+</body>
+</html>
